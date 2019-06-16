@@ -2,7 +2,7 @@ import {PatchBodyBuilder} from "../builders/patch-body.builder";
 import {PatchOperation} from "../models/patch-body.model";
 
 export class BuilderUseExample {
-    createTestPatch() {
+    createTestPatch(): void {
         const patchBody = PatchBodyBuilder.withDefaults()
             .withOperation(PatchOperation.TEST)
             .withTargetPath('/email')

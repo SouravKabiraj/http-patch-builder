@@ -1,47 +1,47 @@
 export class PatchBody {
-    private _op: PatchOperation | undefined;
-    private _path: string | undefined;
-    private _value: any;
-    private _from: string | undefined;
+    private op: PatchOperation | undefined;
+    private path: string | undefined;
+    private value: any;
+    private from: string | undefined;
 
     constructor()
     constructor(op?: PatchOperation, path?: string, value?: any, from?: string) {
-        this._op = op;
-        this._path = path;
-        this._value = value;
-        this._from = from;
+        this.op = op;
+        this.path = path;
+        this.value = value;
+        this.from = from;
     }
 
-    public get op(): PatchOperation | undefined {
-        return this._op;
+    public get Op(): PatchOperation | undefined {
+        return this.op;
     }
 
-    public set op(op: PatchOperation | undefined) {
-        this._op = op;
+    public set Op(op: PatchOperation | undefined) {
+        this.op = op;
     }
 
-    public get path(): string | undefined {
-        return this._path;
+    public get Path(): string | undefined {
+        return this.path;
     }
 
-    public set path(path: string | undefined) {
-        this._path = path;
+    public set Path(path: string | undefined) {
+        this.path = path;
     }
 
-    public get from(): string | undefined {
-        return this._path;
+    public get From(): string | undefined {
+        return this.path;
     }
 
-    public set from(from: string | undefined) {
-        this._from = from;
+    public set From(from: string | undefined) {
+        this.from = from;
     }
 
-    public get value(): any {
-        return this._value;
+    public get Value(): any {
+        return this.value;
     }
 
-    public set value(value: any) {
-        this._value = value;
+    public set Value(value: any) {
+        this.value = value;
     }
 }
 

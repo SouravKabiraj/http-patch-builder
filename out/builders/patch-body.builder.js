@@ -9,19 +9,19 @@ var PatchBodyBuilder = /** @class */ (function () {
         return new PatchBodyBuilder();
     };
     PatchBodyBuilder.prototype.withOperation = function (operation) {
-        this.patchBody.op = operation;
+        this.patchBody.Op = operation;
         return this;
     };
     PatchBodyBuilder.prototype.withTargetPath = function (path) {
-        this.patchBody.path = path;
+        this.patchBody.Path = path;
         return this;
     };
     PatchBodyBuilder.prototype.withValue = function (value) {
-        this.patchBody.value = value;
+        this.patchBody.Value = value;
         return this;
     };
     PatchBodyBuilder.prototype.withFromPath = function (fromPath) {
-        this.patchBody.from = fromPath;
+        this.patchBody.From = fromPath;
         return this;
     };
     PatchBodyBuilder.prototype.build = function () {

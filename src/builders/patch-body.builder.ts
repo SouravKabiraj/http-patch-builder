@@ -12,22 +12,22 @@ export class PatchBodyBuilder {
     }
 
     public withOperation(operation: PatchOperation) {
-        this.patchBody.op = operation;
+        this.patchBody.Op = operation;
         return this;
     }
 
     public withTargetPath(path: string) {
-        this.patchBody.path = path;
+        this.patchBody.Path = path;
         return this;
     }
 
     public withValue(value: any) {
-        this.patchBody.value = value;
+        this.patchBody.Value = value;
         return this;
     }
 
     public withFromPath(fromPath: string) {
-        this.patchBody.from = fromPath;
+        this.patchBody.From = fromPath;
         return this;
     }
 
