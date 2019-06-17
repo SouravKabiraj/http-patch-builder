@@ -16,12 +16,20 @@ var PatchBodyBuilder = /** @class */ (function () {
         this.patchBody.Path = path;
         return this;
     };
+    PatchBodyBuilder.prototype.appendTargetPath = function (path) {
+        this.patchBody.Path = this.patchBody.Path + "/" + path;
+        return this;
+    };
     PatchBodyBuilder.prototype.withValue = function (value) {
         this.patchBody.Value = value;
         return this;
     };
     PatchBodyBuilder.prototype.withFromPath = function (fromPath) {
         this.patchBody.From = fromPath;
+        return this;
+    };
+    PatchBodyBuilder.prototype.appendFromPath = function (path) {
+        this.patchBody.From = this.patchBody.From + "/" + path;
         return this;
     };
     PatchBodyBuilder.prototype.build = function () {

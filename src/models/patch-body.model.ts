@@ -29,7 +29,7 @@ export class PatchBody {
     }
 
     public get From(): string | undefined {
-        return this.path;
+        return this.from;
     }
 
     public set From(from: string | undefined) {

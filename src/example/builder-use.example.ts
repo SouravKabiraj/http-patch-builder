@@ -6,8 +6,10 @@ export class BuilderUseExample {
         const patchBody = PatchBodyBuilder.withDefaults()
             .withOperation(PatchOperation.TEST)
             .withTargetPath('/email')
+            .appendTargetPath('id')
             .withValue('sourav@outlook.com')
             .withFromPath('/name')
+            .appendFromPath('first')
             .build();
 
         console.log(JSON.stringify(patchBody));

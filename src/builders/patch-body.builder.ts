@@ -21,6 +21,11 @@ export class PatchBodyBuilder {
         return this;
     }
 
+    public appendTargetPath(path: string) {
+        this.patchBody.Path = `${this.patchBody.Path}/${path}`;
+        return this;
+    }
+
     public withValue(value: any) {
         this.patchBody.Value = value;
         return this;
@@ -28,6 +33,11 @@ export class PatchBodyBuilder {
 
     public withFromPath(fromPath: string) {
         this.patchBody.From = fromPath;
+        return this;
+    }
+
+    public appendFromPath(path: string) {
+        this.patchBody.From = `${this.patchBody.From}/${path}`;
         return this;
     }
 
