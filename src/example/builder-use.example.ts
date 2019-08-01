@@ -5,20 +5,20 @@ import {PatchBodyBuilder} from "../builders/patch-body.builder";
 export class BuilderUseExample {
     createTestPatch(): void {
         const patchBodyElement = PatchBodyItemBuilder.withDefaults()
-            .withOperation(PatchOperation.TEST)
-            .withTargetPath('/email')
+            .setPatchOperation(PatchOperation.TEST)
+            .setTargetPath('/email')
             .appendTargetPath('id')
-            .withValue('sourav@outlook.com')
-            .withFromPath('/name')
+            .setValue('sourav@outlook.com')
+            .setFromPath('/name')
             .appendFromPath('first')
             .build();
 
         const anotherPatchBodyElement = PatchBodyItemBuilder.withDefaults()
-            .withOperation(PatchOperation.TEST)
-            .withTargetPath('/email')
+            .setPatchOperation(PatchOperation.TEST)
+            .setTargetPath('/email')
             .appendTargetPath('id')
-            .withValue('sourav@outlook.com')
-            .withFromPath('/name')
+            .setValue('sourav@outlook.com')
+            .setFromPath('/name')
             .appendFromPath('first')
             .build();
 

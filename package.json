@@ -1,6 +1,6 @@
 {
   "name": "http-patch-builder",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "rest PATCH body builder which follows all rules.",
   "main": "out/app.js",
   "scripts": {

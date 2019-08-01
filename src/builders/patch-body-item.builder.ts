@@ -11,12 +11,12 @@ export class PatchBodyItemBuilder {
         return new PatchBodyItemBuilder();
     }
 
-    public withOperation(operation: PatchOperation) {
+    public setPatchOperation(operation: PatchOperation) {
         this.patchBodyItem.Op = operation;
         return this;
     }
 
-    public withTargetPath(path: string) {
+    public setTargetPath(path: string) {
         this.patchBodyItem.Path = path;
         return this;
     }
@@ -26,12 +26,12 @@ export class PatchBodyItemBuilder {
         return this;
     }
 
-    public withValue(value: any) {
+    public setValue(value: any) {
         this.patchBodyItem.Value = value;
         return this;
     }
 
-    public withFromPath(fromPath: string) {
+    public setFromPath(fromPath: string) {
         this.patchBodyItem.From = fromPath;
         return this;
     }
