@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbf42c03-fc65-4ccc-b5d9-b093cf2f5aaa" name="Default Changelist" comment="#0003 | Sourav | Added readme file.">
-      <change afterPath="$PROJECT_DIR$/src/builders/patch-body-item.builder.ts" afterDir="false" />
+    <list default="true" id="cbf42c03-fc65-4ccc-b5d9-b093cf2f5aaa" name="Default Changelist" comment="#0005 | Sourav | Exporting Patch-body.builder package.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/builders/patch-body.builder.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/builders/patch-body.builder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/example/builder-use.example.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/example/builder-use.example.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/models/patch-body.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/models/patch-body.model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/builders/patch-body.builder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/builders/patch-body.builder.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/example/builder-use.example.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/example/builder-use.example.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/patch-body.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/patch-body.model.ts" afterDir="false" />
     </list>
     <list id="b9101fba-34ff-4e6d-9d5b-1feac3e79908" name="#0002 | Sourav | changed version number." comment="#0002 | Sourav | changed version number." />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -123,7 +114,7 @@
       <workItem from="1560798961755" duration="1800000" />
       <workItem from="1560801315213" duration="1447000" />
       <workItem from="1561484193604" duration="209000" />
-      <workItem from="1564678487948" duration="3061000" />
+      <workItem from="1564678487948" duration="3686000" />
     </task>
     <task id="LOCAL-00001" summary="#0001 | Sourav | changed field names.">
       <created>1560686110633</created>
@@ -167,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560801917502</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="#0004 | Sourav | Sending changes in array.">
+      <created>1564682359551</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1564682359551</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -216,7 +214,8 @@
     <MESSAGE value="#0002 | Sourav | changed version number." />
     <MESSAGE value="#0003 | Sourav | changed version number." />
     <MESSAGE value="#0003 | Sourav | Added readme file." />
-    <option name="LAST_COMMIT_MESSAGE" value="#0003 | Sourav | Added readme file." />
+    <MESSAGE value="#0004 | Sourav | Sending changes in array." />
+    <option name="LAST_COMMIT_MESSAGE" value="#0004 | Sourav | Sending changes in array." />
   </component>
   <component name="masterDetails">
     <states>
