@@ -1,4 +1,4 @@
-export class PatchBody {
+export class PatchBodyItem {
     private op: PatchOperation | undefined;
     private path: string | undefined;
     private value: any;

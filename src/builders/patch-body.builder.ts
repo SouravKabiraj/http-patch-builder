@@ -1,47 +1,23 @@
-import {PatchBody, PatchOperation} from "../models/patch-body.model";
+import {PatchBodyItemBuilder} from "./patch-body-item.builder";
+import {PatchBodyItem} from "../models/patch-body.model";
 
 export class PatchBodyBuilder {
-    private readonly patchBody: PatchBody;
+    private readonly patchBody: PatchBodyItem[];
 
     constructor() {
-        this.patchBody = new PatchBody();
+        this.patchBody = [];
     }
 
-    public static withDefaults(): PatchBodyBuilder {
+    public static withNoChange(): PatchBodyBuilder {
         return new PatchBodyBuilder();
     }
 
-    public withOperation(operation: PatchOperation) {
-        this.patchBody.Op = operation;
+    public addChangeElement(patchChange: PatchBodyItem): PatchBodyBuilder {
+        this.patchBody.push(patchChange);
         return this;
     }
 
-    public withTargetPath(path: string) {
-        this.patchBody.Path = path;
-        return this;
-    }
-
-    public appendTargetPath(path: string) {
-        this.patchBody.Path = `${this.patchBody.Path}/${path}`;
-        return this;
-    }
-
-    public withValue(value: any) {
-        this.patchBody.Value = value;
-        return this;
-    }
-
-    public withFromPath(fromPath: string) {
-        this.patchBody.From = fromPath;
-        return this;
-    }
-
-    public appendFromPath(path: string) {
-        this.patchBody.From = `${this.patchBody.From}/${path}`;
-        return this;
-    }
-
-    public build(): PatchBody {
+    public build(): PatchBodyItem[] {
         return this.patchBody;
     }
 }

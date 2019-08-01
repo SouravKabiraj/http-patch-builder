@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var PatchBody = /** @class */ (function () {
-    function PatchBody(op, path, value, from) {
+var PatchBodyItem = /** @class */ (function () {
+    function PatchBodyItem(op, path, value, from) {
         this.op = op;
         this.path = path;
         this.value = value;
         this.from = from;
     }
-    Object.defineProperty(PatchBody.prototype, "Op", {
+    Object.defineProperty(PatchBodyItem.prototype, "Op", {
         get: function () {
             return this.op;
         },
@@ -17,7 +17,7 @@ var PatchBody = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(PatchBody.prototype, "Path", {
+    Object.defineProperty(PatchBodyItem.prototype, "Path", {
         get: function () {
             return this.path;
         },
@@ -27,9 +27,9 @@ var PatchBody = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(PatchBody.prototype, "From", {
+    Object.defineProperty(PatchBodyItem.prototype, "From", {
         get: function () {
-            return this.path;
+            return this.from;
         },
         set: function (from) {
             this.from = from;
@@ -37,7 +37,7 @@ var PatchBody = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(PatchBody.prototype, "Value", {
+    Object.defineProperty(PatchBodyItem.prototype, "Value", {
         get: function () {
             return this.value;
         },
@@ -47,9 +47,9 @@ var PatchBody = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
-    return PatchBody;
+    return PatchBodyItem;
 }());
-exports.PatchBody = PatchBody;
+exports.PatchBodyItem = PatchBodyItem;
 var PatchOperation;
 (function (PatchOperation) {
     PatchOperation["TEST"] = "test";

@@ -1,11 +1,11 @@
 {
   "name": "http-patch-builder",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "rest PATCH body builder which follows all rules.",
   "main": "out/app.js",
   "scripts": {
     "build": "tsc",
-    "start": "node out/app.js"
+    "start": "tsc && node out/app.js"
   },
   "keywords": [
     "patch_builder"
